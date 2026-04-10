@@ -1,0 +1,6 @@
+.env
+scripts/.x_session.json
+scripts/debug_*.png
+scripts/.x_chrome_profile/
+scripts/schedule_posts_stdout.txt
+files.zip

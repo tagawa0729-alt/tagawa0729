@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "X バズ投稿フェッチャー",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["scripts/x_fetch_buzz.py"],
+      "port": 0
+    },
+    {
+      "name": "Threads 連投スクリプト",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["scripts/post_threads.py"],
+      "port": 0
+    }
+  ]
+}
