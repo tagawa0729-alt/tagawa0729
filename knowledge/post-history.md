@@ -26,11 +26,11 @@ post: |
 pattern: 問題提起型
 cta: コメント誘導👇
 affiliate_hint: null
-engagement_fetched: false
-likes: null
-reposts: null
-replies: null
-impressions: null
+engagement_fetched: true
+likes: 1
+reposts: 0
+replies: 1
+impressions: 49
 
 ---
 post_id: 18139058251506081
@@ -56,11 +56,12 @@ post: |
 pattern: 逆説体験談型
 cta: コメント誘導👇
 affiliate_hint: null
-engagement_fetched: false
+engagement_fetched: true
 likes: null
 reposts: null
 replies: null
 impressions: null
+note: API error - post not accessible (missing permissions or invalid ID)
 
 ---
 post_id: 18578080885044500
@@ -89,8 +90,8 @@ post: |
 pattern: リスト型
 cta: コメント誘導👇
 affiliate_hint: null
-engagement_fetched: false
-likes: null
-reposts: null
-replies: null
-impressions: null
+engagement_fetched: true
+likes: 0
+reposts: 0
+replies: 0
+impressions: 8
