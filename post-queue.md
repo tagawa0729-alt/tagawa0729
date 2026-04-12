@@ -117,3 +117,26 @@ post: |
 cta: フォロー
 affiliate_hint: null
 trend_ref: Threads急成長（MAU3.5億）
+
+---
+id: queue-20260412-115800
+account_id: 1
+account_name: ハルオ/美容の実験者
+platform: Threads
+pattern: 問題提起型
+status: pending
+created_at: 2026-04-12 11:58
+post: |
+  洗顔後に何もしないで鏡を見てる時間、実は肌にとって最悪やけん。
+
+  洗顔で皮脂や角質が取れた直後、肌は無防備な状態になる。
+  そこで放置すると、洗顔前より水分が蒸発して乾燥するばい。
+
+  正解は「洗顔後3分以内に化粧水」。
+  だから化粧水は洗面台の横に置いておくのが最強。
+
+  動線を作るだけで肌が変わる。知らんかった人は保存しといてよかよ🔖
+comment_reply: null
+cta: 保存
+affiliate_hint: null
+---
