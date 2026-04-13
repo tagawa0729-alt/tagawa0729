@@ -30,7 +30,7 @@ BASE_DIR = Path(__file__).parent.parent
 RESEARCH_FILE = BASE_DIR / "knowledge" / "research-knowledge.md"
 SESSION_FILE = BASE_DIR / "scripts" / ".x_session.json"
 
-# 検索クエリ一覧（順番に実行）
+# 検索クエリ一覧（順番に実行）- 50本×クエリ対応
 SEARCH_QUERIES = [
     {
         "label": "スキンケア全般バズ投稿",
@@ -45,8 +45,24 @@ SEARCH_QUERIES = [
         "url": "https://x.com/search?q=%E6%B4%97%E9%A1%94+OR+%E8%82%8C%E8%8D%92%E3%82%8C+OR+%E3%83%8B%E3%82%AD%E3%83%93%E8%82%8C+lang%3Aja+-filter%3Aretweets&src=typed_query&f=top",
     },
     {
-        "label": "美容・保湿バズ",
-        "url": "https://x.com/search?q=%E4%BF%9D%E6%B9%BF+OR+%E7%BE%8E%E5%AE%B9+%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%B1%E3%82%A2+lang%3Aja+-filter%3Aretweets&src=typed_query&f=top",
+        "label": "化粧水・保湿バズ",
+        "url": "https://x.com/search?q=%E5%8C%96%E7%B2%A7%E6%B0%B4+OR+%E4%BF%9D%E6%B9%BF%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0+lang%3Aja+-filter%3Aretweets&src=typed_query&f=top",
+    },
+    {
+        "label": "クリーム・乳液バズ",
+        "url": "https://x.com/search?q=%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0+OR+%E4%B9%B3%E6%B6%B2+%E8%82%8C+lang%3Aja+-filter%3Aretweets&src=typed_query&f=top",
+    },
+    {
+        "label": "化粧品・スキンケアグッズ",
+        "url": "https://x.com/search?q=%E5%8C%96%E7%B2%A7%E5%93%81+OR+%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%B1%E3%82%A2%E3%82%B0%E3%83%83%E3%82%BA+lang%3Aja+-filter%3Aretweets&src=typed_query&f=top",
+    },
+    {
+        "label": "美容・日焼け止め",
+        "url": "https://x.com/search?q=%E6%97%A5%E7%84%BC%E3%81%91%E6%AD%A2%E3%82%81+OR+%E7%BE%8E%E5%AE%B9+%E8%82%8C+lang%3Aja+-filter%3Aretweets&src=typed_query&f=top",
+    },
+    {
+        "label": "毛穴・テカリ・くすみ",
+        "url": "https://x.com/search?q=%E6%AF%9B%E7%A9%B4+OR+%E3%83%86%E3%82%AB%E3%83%AA+OR+%E3%81%8F%E3%81%99%E3%81%BF+%E8%82%8C+lang%3Aja+-filter%3Aretweets&src=typed_query&f=top",
     },
 ]
 
@@ -406,8 +422,8 @@ def format_markdown(all_results: list, now: datetime) -> str:
 
 def main():
     parser = argparse.ArgumentParser(description="X バズ投稿フェッチャー（Playwright版）")
-    parser.add_argument("--min-likes", type=int, default=10000)
-    parser.add_argument("--max-results", type=int, default=10)
+    parser.add_argument("--min-likes", type=int, default=1000)
+    parser.add_argument("--max-results", type=int, default=50)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--headless", action="store_true", default=True,
                         help="ヘッドレスモード（デフォルトON）")

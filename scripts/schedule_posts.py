@@ -6,7 +6,7 @@ from pathlib import Path
 
 JST = timezone(timedelta(hours=9))
 BASE_DIR = Path(__file__).parent.parent
-QUEUE_FILE = BASE_DIR / "posts" / "post-queue-2026-04-13.md"
+QUEUE_FILE = BASE_DIR / "posts" / "post-queue-2026-04-14.md"
 LOG_FILE = BASE_DIR / "scripts" / "schedule_posts_log.txt"
 STATE_FILE = BASE_DIR / "scripts" / "posting_state.json"
 
@@ -22,7 +22,7 @@ SCHEDULE_TIMES = [
     "18:28","18:55","19:22","19:47","20:12",
 ]
 
-SEED_REPLIES = {}
+SEED_REPLIES = {}  # キューファイルのcomment_replyから手動設定
 
 def log(msg):
     ts = datetime.now(JST).strftime("%Y-%m-%d %H:%M:%S")
@@ -96,7 +96,7 @@ def main():
         if i in completed:
             adjusted.append(None)
             continue
-        actual = max(scheduled_at, last_time + MIN_INTERVAL)
+        actual = max(scheduled_at, last_time + MIN_INTERVAL) if scheduled_at <= now else max(scheduled_at, last_time + MIN_INTERVAL)
         adjusted.append(actual)
         last_time = actual
     log(f"残り: {len(posts) - len(completed)}本 | 終了予定: {[t for t in adjusted if t][-1].strftime('%H:%M') if any(adjusted) else 'N/A'}")

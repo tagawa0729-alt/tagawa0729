@@ -140,3 +140,26 @@ comment_reply: null
 cta: 保存
 affiliate_hint: null
 ---
+
+---
+id: queue-20260413-094500
+account_id: 1
+account_name: ハルオ/美容の実験者
+platform: Threads
+pattern: 逆説型×体験談型
+status: pending
+created_at: 2026-04-13 09:45
+post: |
+  93.5%の男性がスキンケアを間違えてる。テカり肌こそ実は乾燥してる
+
+  「顔テカるから保湿いらん」これ完全に逆。
+
+  肌が乾燥すると、防御反応で皮脂を過剰分泌する仕組み。だから「テカり=水分不足のSOS」なんよ。
+
+  僕も混合肌でずっと保湿サボってたけど、ハトムギ化粧水（水分を補給するプチプラ）を1週間続けたら午後のテカりが明らかに減った。
+
+  「これ友達に教えたい」と思ったらいいねくれると嬉しい👍
+comment_reply: null
+cta: いいね
+affiliate_hint: ハトムギ化粧水（プチプラ・Amazon/楽天）
+---
