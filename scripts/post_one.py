@@ -13,7 +13,7 @@ import pytz
 JST          = pytz.timezone("Asia/Tokyo")
 USER_ID      = "26245972698403230"
 ACCESS_TOKEN = os.environ["THREADS_ACCESS_TOKEN"]
-MIN_GAP      = 20 * 60   # 最低20分間隔
+MIN_GAP      = random.randint(18, 27) * 60   # 18〜27分ランダム間隔（毎回異なる）
 BASE_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUEUE_FILE   = os.path.join(BASE_DIR, "posts", "post-queue.md")
 HISTORY_FILE = os.path.join(BASE_DIR, "knowledge", "post-history.md")
